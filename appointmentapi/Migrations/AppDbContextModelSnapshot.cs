@@ -75,6 +75,11 @@ namespace appointmentapi.Migrations
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
                     b.HasKey("CdUser");
 
                     b.HasIndex("CdPerson");

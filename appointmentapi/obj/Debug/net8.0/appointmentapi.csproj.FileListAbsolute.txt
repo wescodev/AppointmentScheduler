@@ -169,3 +169,6 @@ C:\Users\wesle\source\repos\projetos\appointmentapi\appointmentapi\obj\Debug\net
 C:\Users\wesle\source\repos\projetos\appointmentapi\appointmentapi\obj\Debug\net8.0\appointmentapi.pdb
 C:\Users\wesle\source\repos\projetos\appointmentapi\appointmentapi\obj\Debug\net8.0\appointmentapi.genruntimeconfig.cache
 C:\Users\wesle\source\repos\projetos\appointmentapi\appointmentapi\obj\Debug\net8.0\ref\appointmentapi.dll
+C:\Users\wesle\source\repos\projetos\appointmentapi\appointmentapi\obj\Debug\net8.0\appointmentapi.sourcelink.json
+C:\Users\wesle\source\repos\projetos\appointmentapi\appointmentapi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\wesle\source\repos\projetos\appointmentapi\appointmentapi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
