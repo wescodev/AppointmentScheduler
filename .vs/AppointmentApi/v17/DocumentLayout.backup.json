@@ -3,32 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|c:\\users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|solutionrelative:appointmentapi\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|c:\\users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|solutionrelative:appointmentapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|c:\\users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|solutionrelative:appointmentapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|c:\\users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|solutionrelative:appointmentapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|c:\\users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\appointmentapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|solutionrelative:appointmentapi\\appointmentapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|c:\\users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|solutionrelative:appointmentapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|c:\\users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\settings\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|solutionrelative:appointmentapi\\settings\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|c:\\users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|solutionrelative:appointmentapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|c:\\users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|solutionrelative:appointmentapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|c:\\users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\appointmentapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|solutionrelative:appointmentapi\\appointmentapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|c:\\users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|solutionrelative:appointmentapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|c:\\users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\repositories\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|solutionrelative:appointmentapi\\repositories\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|c:\\users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|solutionrelative:appointmentapi\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|c:\\users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\dtos\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|solutionrelative:appointmentapi\\dtos\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|c:\\users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\dtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|solutionrelative:appointmentapi\\dtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|c:\\users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\repositories\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|solutionrelative:appointmentapi\\repositories\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|c:\\users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\services\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0744F922-14E2-48B9-BE6A-759CB09BC634}|appointmentapi\\appointmentapi.csproj|solutionrelative:appointmentapi\\services\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,8 +57,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 269,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,68 +66,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appointmentapi.csproj",
-              "DocumentMoniker": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\appointmentapi.csproj",
-              "RelativeDocumentMoniker": "appointmentapi\\appointmentapi.csproj",
-              "ToolTip": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\appointmentapi.csproj",
-              "RelativeToolTip": "appointmentapi\\appointmentapi.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-05T23:24:35.298Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\Models\\User.cs",
-              "RelativeDocumentMoniker": "appointmentapi\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\Models\\User.cs",
-              "RelativeToolTip": "appointmentapi\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "JwtSettings.cs",
+              "DocumentMoniker": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\Settings\\JwtSettings.cs",
+              "RelativeDocumentMoniker": "appointmentapi\\Settings\\JwtSettings.cs",
+              "ToolTip": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\Settings\\JwtSettings.cs",
+              "RelativeToolTip": "appointmentapi\\Settings\\JwtSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T23:11:45.639Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Person.cs",
-              "DocumentMoniker": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\Models\\Person.cs",
-              "RelativeDocumentMoniker": "appointmentapi\\Models\\Person.cs",
-              "ToolTip": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\Models\\Person.cs",
-              "RelativeToolTip": "appointmentapi\\Models\\Person.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T23:11:37.908Z",
+              "WhenOpened": "2025-10-20T00:21:21.358Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "appointmentapi\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\Properties\\launchSettings.json",
-              "RelativeToolTip": "appointmentapi\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-05T22:56:02.958Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "appointmentapi.http",
-              "DocumentMoniker": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\appointmentapi.http",
-              "RelativeDocumentMoniker": "appointmentapi\\appointmentapi.http",
-              "ToolTip": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\appointmentapi.http",
-              "RelativeToolTip": "appointmentapi\\appointmentapi.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-10-05T22:55:55.143Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\appsettings.json",
               "RelativeDocumentMoniker": "appointmentapi\\appsettings.json",
@@ -115,19 +87,138 @@
               "RelativeToolTip": "appointmentapi\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-05T22:55:49.696Z"
+              "WhenOpened": "2025-10-20T00:19:08.449Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\Repositories\\Interface\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "appointmentapi\\Repositories\\Interface\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\Repositories\\Interface\\IUserRepository.cs",
+              "RelativeToolTip": "appointmentapi\\Repositories\\Interface\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T00:07:48.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserLoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\DTOs\\UserLoginDTO.cs",
+              "RelativeDocumentMoniker": "appointmentapi\\DTOs\\UserLoginDTO.cs",
+              "ToolTip": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\DTOs\\UserLoginDTO.cs",
+              "RelativeToolTip": "appointmentapi\\DTOs\\UserLoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T23:53:36.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "appointmentapi\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "appointmentapi\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA7wBIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T23:49:07.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\Program.cs",
               "RelativeDocumentMoniker": "appointmentapi\\Program.cs",
               "ToolTip": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\Program.cs",
               "RelativeToolTip": "appointmentapi\\Program.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAiwE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T23:45:30.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "appointmentapi\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "appointmentapi\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T23:44:34.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PersonRepository.cs",
+              "DocumentMoniker": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\Repositories\\PersonRepository.cs",
+              "RelativeDocumentMoniker": "appointmentapi\\Repositories\\PersonRepository.cs",
+              "ToolTip": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\Repositories\\PersonRepository.cs",
+              "RelativeToolTip": "appointmentapi\\Repositories\\PersonRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T23:44:30.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "appointmentapi\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\Services\\UserService.cs",
+              "RelativeToolTip": "appointmentapi\\Services\\UserService.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAuwCcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T23:37:41.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserRegisterDTO.cs",
+              "DocumentMoniker": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\DTOs\\UserRegisterDTO.cs",
+              "RelativeDocumentMoniker": "appointmentapi\\DTOs\\UserRegisterDTO.cs",
+              "ToolTip": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\DTOs\\UserRegisterDTO.cs",
+              "RelativeToolTip": "appointmentapi\\DTOs\\UserRegisterDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T22:55:41.709Z"
+              "WhenOpened": "2025-10-19T23:32:53.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "appointmentapi\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\Services\\AuthService.cs",
+              "RelativeToolTip": "appointmentapi\\Services\\AuthService.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAADwv0AAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T23:32:21.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PersonService.cs",
+              "DocumentMoniker": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\Services\\PersonService.cs",
+              "RelativeDocumentMoniker": "appointmentapi\\Services\\PersonService.cs",
+              "ToolTip": "C:\\Users\\wesle\\source\\repos\\projetos\\appointmentapi\\appointmentapi\\Services\\PersonService.cs",
+              "RelativeToolTip": "appointmentapi\\Services\\PersonService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAwwBwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T23:31:05.007Z",
+              "EditorCaption": ""
             }
           ]
         }

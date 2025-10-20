@@ -3,6 +3,7 @@
 public class User
 {
     public int CdUser { get; set; }
+    public string Username { get; set; }
     public string PasswordHash { get; set; } 
     public DateTime CreationDate { get; set; } = DateTime.UtcNow;
     public bool FlAtivo { get; set; }
