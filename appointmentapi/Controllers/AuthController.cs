@@ -1,4 +1,4 @@
-﻿using appointmentapi.DTOs;
+﻿using appointmentapi.DTOs.Auth;
 using appointmentapi.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -42,6 +42,27 @@ public class AuthController : Controller
             return Unauthorized(new { Error = "Invalid username or password" });
 
         return Ok(new { Token = token });
+    }
+
+    [HttpPut("ResetPassword")]
+    public async Task<IActionResult> ResetPassword(ResetPasswordDTO dto)
+    {
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+
+        try
+        {
+            var result = await _authService.ResetPasswordAsync(dto);
+
+            if (result is null)
+                return NotFound(new { Error = "User not found" });
+
+            return Ok(new { Message = result });
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new { Error = ex.Message });
+        }
     }
 
 }

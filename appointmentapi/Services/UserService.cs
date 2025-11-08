@@ -57,4 +57,25 @@ public class UserService
 
         return user;
     }
+
+    public async Task<User?> ResetAsync(string username, string newPassword)
+    {
+        var user = await _userRepository.GetUserByUsernameAsync(username);
+
+        if (user is null)
+            return null;
+
+        string newPasswordHash;
+
+        using (var sha256 = SHA256.Create())
+        {
+            var bytes = Encoding.UTF8.GetBytes(newPassword);
+            var hash = sha256.ComputeHash(bytes);
+            newPasswordHash = Convert.ToBase64String(hash);
+        }
+
+        await _userRepository.UpdatePasswordAsync(user, newPasswordHash);
+
+        return user;
+    }
 }

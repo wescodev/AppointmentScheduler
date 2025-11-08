@@ -26,4 +26,11 @@ public class UserRepository : IUserRepository
             .AsNoTracking().
             FirstOrDefaultAsync(u => u.Username == username);
     }
+
+    public async Task UpdatePasswordAsync(User user, string newPasswordHash)
+    {
+        user.PasswordHash = newPasswordHash;
+        _context.Users.Update(user);
+        await _context.SaveChangesAsync();
+    }
 }

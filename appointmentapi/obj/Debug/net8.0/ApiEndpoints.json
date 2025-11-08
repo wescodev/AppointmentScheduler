@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "appointmentapi.DTOs.UserLoginDTO",
+        "Type": "appointmentapi.DTOs.Auth.UserLoginDTO",
         "IsRequired": true
       }
     ],
@@ -25,7 +25,23 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "appointmentapi.DTOs.UserRegisterDTO",
+        "Type": "appointmentapi.DTOs.Auth.UserRegisterDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "appointmentapi.Controllers.AuthController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/Auth/ResetPassword",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "appointmentapi.DTOs.Auth.ResetPasswordDTO",
         "IsRequired": true
       }
     ],

@@ -1,4 +1,4 @@
-﻿namespace appointmentapi.DTOs;
+﻿namespace appointmentapi.DTOs.Auth;
 
 public class UserLoginDTO
 {
