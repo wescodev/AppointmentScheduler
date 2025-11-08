@@ -15,15 +15,15 @@ public class PersonRepository : IPersonRepository
     }
     public async Task<Person> AddPersonAsync(Person person)
     {
-       await _context.Persons.AddAsync(person);
-       await _context.SaveChangesAsync();
+        await _context.Persons.AddAsync(person);
+        await _context.SaveChangesAsync();
 
-       return person;
+        return person;
     }
 
     public Task<Person?> GetByEmailAsync(string email)
     {
-       return _context.Persons.FirstOrDefaultAsync(p => p.Email == email);
+        return _context.Persons.FirstOrDefaultAsync(p => p.Email == email);
     }
 
 }

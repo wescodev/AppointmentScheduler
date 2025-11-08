@@ -1,4 +1,4 @@
-﻿using appointmentapi.DTOs;
+﻿using appointmentapi.DTOs.Auth;
 using appointmentapi.Models;
 using appointmentapi.Repositories.Interface;
 using appointmentapi.Settings;
@@ -62,6 +62,21 @@ public class AuthService
         );
 
         return new JwtSecurityTokenHandler().WriteToken(token);
+    }
+
+    public async Task<string?> ResetPasswordAsync (ResetPasswordDTO dto)
+    {
+        if (dto is null || string.IsNullOrWhiteSpace(dto.Username) || string.IsNullOrWhiteSpace(dto.NewPassword))
+            throw new ArgumentException("Username and password must be provided");
+
+        var user = await _userService.ResetAsync(dto.Username, dto.NewPassword);
+
+        if (user is null)
+            return null; // usuário não encontrado
+
+        return "Senha atualizada com sucesso!";
+
+
     }
 
 }
