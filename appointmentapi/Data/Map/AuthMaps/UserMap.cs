@@ -1,14 +1,14 @@
-﻿using appointmentapi.Models;
+﻿using appointmentapi.Models.AuthEntity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace appointmentapi.Data.Map;
+namespace appointmentapi.Data.Map.AuthMaps;
 
 public class UserMap : IEntityTypeConfiguration<User>
 {
     public void Configure(EntityTypeBuilder<User> builder)
     {
-        builder.HasKey(u => u.CdUser);
+        builder.HasKey(u => u.Id);
 
         builder.Property(u => u.Username)
             .IsRequired()
@@ -21,12 +21,12 @@ public class UserMap : IEntityTypeConfiguration<User>
         builder.Property(u => u.CreationDate)
             .IsRequired();
 
-        builder.Property(u => u.FlAtivo)
+        builder.Property(u => u.Active)
             .IsRequired();
 
         builder.HasOne(u => u.Person)
             .WithMany()
-            .HasForeignKey(u => u.CdPerson)
+            .HasForeignKey(u => u.PersonId)
             .OnDelete(DeleteBehavior.Cascade);
     }
 }

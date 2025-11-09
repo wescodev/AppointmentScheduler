@@ -1,4 +1,4 @@
-﻿using appointmentapi.Models;
+﻿using appointmentapi.Models.AuthEntity;
 using appointmentapi.Repositories.Interface;
 using System.Security.Cryptography;
 using System.Text;
@@ -27,10 +27,10 @@ public class UserService
 
         var user = new User
         {
-            CdPerson = person.CdPerson,
+            PersonId = person.Id,
             Username = person.Email,
             PasswordHash = passwordHash,
-            FlAtivo = true
+            Active = true
         };
 
         await _userRepository.AddUserAsync(user);

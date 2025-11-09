@@ -1,4 +1,4 @@
-﻿using appointmentapi.Models;
+﻿using appointmentapi.Models.AuthEntity;
 
 namespace appointmentapi.Repositories.Interface;
 
