@@ -1,4 +1,5 @@
-﻿using appointmentapi.Models;
+﻿using appointmentapi.Models.AppointmentEntity;
+using appointmentapi.Models.AuthEntity;
 using appointmentapi.Repositories.Interface;
 
 namespace appointmentapi.Services
@@ -17,11 +18,16 @@ namespace appointmentapi.Services
             if(existing != null)
                 throw new Exception("Email already in use");
 
+            var phone = new Phone
+            {
+                Number = phoneNumber
+            };
+
             var newPerson = new Person
             {
                 Name = fullName,
                 Email = email,
-                Number = phoneNumber,
+                Phone = phone,
                 BirthDate = birthdate
             };
 

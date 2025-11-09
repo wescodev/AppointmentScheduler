@@ -1,5 +1,5 @@
 ﻿using appointmentapi.Data;
-using appointmentapi.Models;
+using appointmentapi.Models.AuthEntity;
 using appointmentapi.Repositories.Interface;
 using Microsoft.EntityFrameworkCore;
 
