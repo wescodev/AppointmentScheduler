@@ -1,11 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace appointmentapi.Controllers
+namespace appointmentapi.Controllers;
+
+[ApiController]
+[Route("api/[controller]")]
+public class AppointmentController : Controller
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class AppointmentController : Controller
-    {
-       
-    }
+   
 }

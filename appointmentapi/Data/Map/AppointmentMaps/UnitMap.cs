@@ -27,7 +27,7 @@ namespace appointmentapi.Data.Map.AppointmentMaps
             .OnDelete(DeleteBehavior.Restrict);
 
 
-            builder.HasMany(u => u.UnitSchedule)
+            builder.HasMany(u => u.UnitSchedules)
                 .WithOne(us => us.Unit) //fk
                 .HasForeignKey(us => us.UnitId)
                 .OnDelete(DeleteBehavior.Cascade);

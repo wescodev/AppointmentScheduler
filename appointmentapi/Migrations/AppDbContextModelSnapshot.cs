@@ -68,32 +68,37 @@ namespace appointmentapi.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int?>("AddressId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("PersonId")
                         .HasColumnType("int");
 
-                    b.Property<int>("SpecialtyId")
+                    b.Property<int?>("PhoneId")
                         .HasColumnType("int");
 
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
+                    b.Property<int>("SpecialtyId")
+                        .HasColumnType("int");
 
                     b.Property<int>("UnitId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("AddressId");
+
                     b.HasIndex("PersonId");
+
+                    b.HasIndex("PhoneId");
 
                     b.HasIndex("SpecialtyId");
 
                     b.HasIndex("UnitId");
 
-                    b.ToTable("Appointment", (string)null);
+                    b.ToTable("Appointments");
                 });
 
             modelBuilder.Entity("appointmentapi.Models.AppointmentEntity.Phone", b =>
@@ -137,6 +142,56 @@ namespace appointmentapi.Migrations
                     b.ToTable("Specialty", (string)null);
                 });
 
+            modelBuilder.Entity("appointmentapi.Models.AppointmentEntity.TimeSlot", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("AppointmentId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<TimeSpan>("EndTime")
+                        .HasColumnType("time");
+
+                    b.Property<bool>("IsAvailable")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(true);
+
+                    b.Property<int>("SpecialtyId")
+                        .HasColumnType("int");
+
+                    b.Property<TimeSpan>("StartTime")
+                        .HasColumnType("time");
+
+                    b.Property<int>("UnitId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AppointmentId")
+                        .IsUnique()
+                        .HasFilter("[AppointmentId] IS NOT NULL");
+
+                    b.HasIndex("SpecialtyId");
+
+                    b.HasIndex("UnitId");
+
+                    b.ToTable("TimeSlot", (string)null);
+                });
+
             modelBuilder.Entity("appointmentapi.Models.AppointmentEntity.Unit", b =>
                 {
                     b.Property<int>("Id")
@@ -175,16 +230,18 @@ namespace appointmentapi.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("DayOfWeek")
-                        .IsRequired()
+                    b.Property<int>("DayOfWeek")
                         .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)");
+                        .HasColumnType("int");
 
                     b.Property<TimeSpan>("EndTime")
                         .HasColumnType("time");
 
                     b.Property<bool>("IsAvailable")
                         .HasColumnType("bit");
+
+                    b.Property<int>("SlotDurationMinutes")
+                        .HasColumnType("int");
 
                     b.Property<TimeSpan>("StartTime")
                         .HasColumnType("time");
@@ -232,6 +289,11 @@ namespace appointmentapi.Migrations
 
                     b.Property<DateTime>("BirthDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("CPF")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -291,13 +353,23 @@ namespace appointmentapi.Migrations
 
             modelBuilder.Entity("appointmentapi.Models.AppointmentEntity.Appointment", b =>
                 {
+                    b.HasOne("appointmentapi.Models.AppointmentEntity.Address", "Address")
+                        .WithMany()
+                        .HasForeignKey("AddressId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
                     b.HasOne("appointmentapi.Models.AuthEntity.Person", "Person")
                         .WithMany()
                         .HasForeignKey("PersonId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("appointmentapi.Models.AppointmentEntity.Specialty", null)
+                    b.HasOne("appointmentapi.Models.AppointmentEntity.Phone", "Phone")
+                        .WithMany()
+                        .HasForeignKey("PhoneId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.HasOne("appointmentapi.Models.AppointmentEntity.Specialty", "Specialty")
                         .WithMany()
                         .HasForeignKey("SpecialtyId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -309,7 +381,39 @@ namespace appointmentapi.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
+                    b.Navigation("Address");
+
                     b.Navigation("Person");
+
+                    b.Navigation("Phone");
+
+                    b.Navigation("Specialty");
+
+                    b.Navigation("Unit");
+                });
+
+            modelBuilder.Entity("appointmentapi.Models.AppointmentEntity.TimeSlot", b =>
+                {
+                    b.HasOne("appointmentapi.Models.AppointmentEntity.Appointment", "Appointment")
+                        .WithOne()
+                        .HasForeignKey("appointmentapi.Models.AppointmentEntity.TimeSlot", "AppointmentId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.HasOne("appointmentapi.Models.AppointmentEntity.Specialty", "Specialty")
+                        .WithMany()
+                        .HasForeignKey("SpecialtyId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("appointmentapi.Models.AppointmentEntity.Unit", "Unit")
+                        .WithMany()
+                        .HasForeignKey("UnitId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Appointment");
+
+                    b.Navigation("Specialty");
 
                     b.Navigation("Unit");
                 });
@@ -336,7 +440,7 @@ namespace appointmentapi.Migrations
             modelBuilder.Entity("appointmentapi.Models.AppointmentEntity.UnitSchedule", b =>
                 {
                     b.HasOne("appointmentapi.Models.AppointmentEntity.Unit", "Unit")
-                        .WithMany("UnitSchedule")
+                        .WithMany("UnitSchedules")
                         .HasForeignKey("UnitId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -391,7 +495,7 @@ namespace appointmentapi.Migrations
 
             modelBuilder.Entity("appointmentapi.Models.AppointmentEntity.Unit", b =>
                 {
-                    b.Navigation("UnitSchedule");
+                    b.Navigation("UnitSchedules");
 
                     b.Navigation("UnitSpecialties");
                 });

@@ -19,6 +19,10 @@ public class PersonMap : IEntityTypeConfiguration<Person>
             .IsRequired()
             .HasMaxLength(100);
 
+        builder.Property(p => p.CPF)
+        .IsRequired()
+        .HasMaxLength(100);
+
         builder.HasOne(u => u.Phone)
           .WithOne()//fk
           .HasForeignKey<Person>(u => u.PhoneId)

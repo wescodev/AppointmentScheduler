@@ -9,6 +9,6 @@ public class Unit
     public int PhoneId { get; set; }
     public Phone Phone { get; set; }
     public ICollection<UnitSpecialty> UnitSpecialties { get; set; }
-    public ICollection<UnitSchedule> UnitSchedule { get; set; }
+    public ICollection<UnitSchedule> UnitSchedules { get; set; }
 
 }

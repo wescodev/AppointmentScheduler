@@ -1,11 +1,18 @@
 using appointmentapi.Data;
-using appointmentapi.Repositories;
-using appointmentapi.Repositories.Interface;
-using appointmentapi.Services;
+using appointmentapi.Repositories.AppointmentRepositories;
+using appointmentapi.Repositories.Auth;
+using appointmentapi.Repositories.Interface.AppointmentInterface;
+using appointmentapi.Repositories.Interface.AuthInterface;
+using appointmentapi.Services.Auth;
+using appointmentapi.Services.Interface;
+using appointmentapi.Services.Specialty;
+using appointmentapi.Services.TimeSlots;
+using appointmentapi.Services.UnitSpecialty;
 using appointmentapi.Settings;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -39,6 +46,36 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Appointment API", Version = "v1" });
+
+    // Configuração do JWT
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Type = SecuritySchemeType.Http,
+        Scheme = "Bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Description = "Informe o token JWT: 'Bearer {token}'"
+    });
+
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            new string[] {}
+        }
+    });
+});
 
 #endregion
 
@@ -55,10 +92,19 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 // Repositórios
 builder.Services.AddScoped<IPersonRepository, PersonRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<ISpecialtyRepository, SpecialtyRepository>();
+builder.Services.AddScoped<IUnitRepository, UnitRepository>();
+builder.Services.AddScoped<ITimeSlotRepository, TimeSlotRepository>();
+builder.Services.AddScoped<IUnitScheduleRepository, UnitScheduleRepository>();
 
 // Serviços de negócio
 builder.Services.AddScoped<PersonService>();
 builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<ISpecialtyService, SpecialtyService>();
+builder.Services.AddScoped<IUnitService, UnitService>();
+builder.Services.AddScoped<ITimeSlotService, TimeSlotService>();
+
+
 
 // Serviço de autenticação (orquestrador)
 builder.Services.AddScoped<AuthService>();

@@ -17,6 +17,7 @@ public class AppDbContext : DbContext
     public DbSet<Unit> Units { get; set; }
     public DbSet<UnitSchedule> UnitSchedules { get; set; }
     public DbSet<UnitSpecialty> UnitSpecialties { get; set; }
+    public DbSet<TimeSlot> TimeSlots { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

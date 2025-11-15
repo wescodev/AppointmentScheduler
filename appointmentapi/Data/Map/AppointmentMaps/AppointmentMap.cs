@@ -8,31 +8,41 @@ public class AppointmentMap : IEntityTypeConfiguration<Appointment>
 {
     public void Configure(EntityTypeBuilder<Appointment> builder)
     {
-        builder.ToTable("Appointment");
-
         builder.HasKey(a => a.Id);
 
-        builder.Property(a => a.Date)
-            .IsRequired();
+        builder.Property(a => a.Date).IsRequired();
 
-        builder.Property(a => a.Status)
-            .IsRequired()
-            .HasMaxLength(30);
+        builder.HasOne(a => a.Person) 
+               .WithMany() 
+               .HasForeignKey(a => a.PersonId) 
+               .IsRequired()
+               .OnDelete(DeleteBehavior.Restrict);
 
-        builder.HasOne(a => a.Person)
-            .WithMany() 
-            .HasForeignKey(a => a.PersonId)
-            .OnDelete(DeleteBehavior.Restrict);
+        builder.HasOne(a => a.Specialty)
+               .WithMany()
+               .HasForeignKey(a => a.SpecialtyId)
+               .IsRequired()
+               .OnDelete(DeleteBehavior.Restrict);
 
         builder.HasOne(a => a.Unit)
-            .WithMany() 
-            .HasForeignKey(a => a.UnitId)
-            .OnDelete(DeleteBehavior.Restrict);
+               .WithMany()
+               .HasForeignKey(a => a.UnitId)
+               .IsRequired()
+               .OnDelete(DeleteBehavior.Restrict);
 
-        builder.HasOne<Specialty>()
-            .WithMany()
-            .HasForeignKey(a => a.SpecialtyId)
-            .OnDelete(DeleteBehavior.Restrict);
+
+        builder.HasOne(a => a.Address)
+               .WithMany()
+               .HasForeignKey(a => a.AddressId)
+               .IsRequired(false) 
+               .OnDelete(DeleteBehavior.SetNull); 
+
+
+        builder.HasOne(a => a.Phone)
+               .WithMany()
+               .HasForeignKey(a => a.PhoneId)
+               .IsRequired(false) 
+               .OnDelete(DeleteBehavior.SetNull);
 
     }
 }

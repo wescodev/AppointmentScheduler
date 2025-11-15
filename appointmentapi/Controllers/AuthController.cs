@@ -1,5 +1,5 @@
 ﻿using appointmentapi.DTOs.Auth;
-using appointmentapi.Services;
+using appointmentapi.Services.Auth;
 using Microsoft.AspNetCore.Mvc;
 
 namespace appointmentapi.Controllers;

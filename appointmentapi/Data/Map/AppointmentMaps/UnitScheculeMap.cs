@@ -27,7 +27,7 @@ public class UnitScheduleMap : IEntityTypeConfiguration<UnitSchedule>
 
         // 🔹 Relacionamento com Unit (1:N)
         builder.HasOne(us => us.Unit)
-            .WithMany(u => u.UnitSchedule)
+            .WithMany(u => u.UnitSchedules)
             .HasForeignKey(us => us.UnitId)
             .OnDelete(DeleteBehavior.Cascade);
 
